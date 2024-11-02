@@ -36,13 +36,20 @@ h2 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   font-size: 0.9em;
   gap: 10px;
 }
 
 #initial-buttons button:hover {
   background-color: #2980b9;
+}
+
+/* Disabled durumu için yeni stiller */
+#initial-buttons button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+  transform: scale(0.98);
 }
 
 /* yeni Vaka Butonu */
@@ -53,13 +60,19 @@ h2 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   font-size: 0.9em;
   margin-bottom: 20px;
 }
 
 #new-case-button:hover {
   background-color: #c0392b;
+}
+
+#new-case-button:disabled {
+  background-color: #f1a9a0;
+  cursor: not-allowed;
+  transform: scale(0.98);
 }
 
 /* sohbet formu */
@@ -86,6 +99,14 @@ h2 {
   border-radius: 5px;
   resize: vertical;
   margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+#chat-form textarea:disabled {
+  background-color: #ecf0f1;
+  border-color: #bdc3c7;
+  color: #7f8c8d;
+  cursor: not-allowed;
 }
 
 #chat-form button {
@@ -95,12 +116,18 @@ h2 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   font-size: 1em;
 }
 
 #chat-form button:hover {
   background-color: #27ae60;
+}
+
+#chat-form button:disabled {
+  background-color: #a3e2ba;
+  cursor: not-allowed;
+  transform: scale(0.98);
 }
 
 /* sohbet geçmişi */
@@ -120,6 +147,12 @@ h2 {
 
 #chat-history strong {
   color: #34495e;
+}
+
+.loading {
+  opacity: 0.7;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
 /* repsonsive */
