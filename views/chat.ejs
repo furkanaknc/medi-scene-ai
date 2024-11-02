@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AI Model ile Sohbet</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <h2>Medi - Scene App</h2>
+
+    <div id="initial-buttons">
+      <button onclick="setInitialPrompt('Anatomi')">Anatomi</button>
+      <button onclick="setInitialPrompt('Histoloji ve Embriyoloji')">
+        Histoloji ve Embriyoloji
+      </button>
+      <button onclick="setInitialPrompt('Fizyoloji')">Fizyoloji</button>
+      <button onclick="setInitialPrompt('Tıbbi biyokimya')">
+        Tıbbi Biyokimya
+      </button>
+      <button onclick="setInitialPrompt('Tıbbi mikrobiyoloji')">
+        Tıbbi Mikrobiyoloji
+      </button>
+      <button onclick="setInitialPrompt('Tıbbi patoloji')">
+        Tıbbi Patoloji
+      </button>
+      <button onclick="setInitialPrompt('Tıbbi farmakoloji')">
+        Tıbbi Farmakoloji
+      </button>
+      <button onclick="setInitialPrompt('Dahiliye grubu')">
+        Dahiliye Grubu
+      </button>
+      <button onclick="setInitialPrompt('Pediatri')">Pediatri</button>
+      <button onclick="setInitialPrompt('Cerrahi Grubu')">Cerrahi Grubu</button>
+      <button onclick="setInitialPrompt('Kadın Hastalıkları ve Doğum')">
+        Kadın Hastalıkları ve Doğum
+      </button>
+    </div>
+
+    <button id="new-case-button" onclick="resetChat()">Yeni Vaka</button>
+
+    <!-- Sohbet Alanı -->
+    <form id="chat-form" method="POST" action="/send-prompt">
+      <label for="prompt">Prompt:</label>
+      <textarea name="prompt" id="prompt" required></textarea>
+      <button type="submit">Gönder</button>
+    </form>
+
+    <h3>Sohbet Geçmişi</h3>
+    <div id="chat-history">
+      <% chatHistory.forEach(entry => { %>
+      <p>
+        <strong><%= entry.role === 'user' ? 'Kullanıcı' : 'Model' %>:</strong>
+        <%= entry.text %>
+      </p>
+      <% }); %>
+    </div>
+
+    <script type="module" src="/js/scripts.mjs"></script>
+  </body>
+</html>
