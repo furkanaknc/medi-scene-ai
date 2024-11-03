@@ -1,6 +1,6 @@
-# Medisim - Tıp Eğitiminde Simülasyon Yazılımı
+# Medi-Scene - Tıp Eğitiminde Simülasyon Yazılımı
 
-**Medisim**, Tıp öğrencilerinin klinik senaryoları deneyimlemesine ve pratik yapmasına olanak tanıyan bir tıbbi simülasyon yazılımıdır. Bu yazılım, sanal hastalar aracılığıyla adım adım vaka yönetimi ve teşhis süreçlerini simüle eder ve özellikle acil durum yönetimi, tanı koyma ve hasta değerlendirme gibi tıbbi becerilerin gelişimini destekler.
+**Medi-Scene**, Tıp öğrencilerinin klinik senaryoları deneyimlemesine ve pratik yapmasına olanak tanıyan bir tıbbi simülasyon yazılımıdır. Bu yazılım, sanal hastalar aracılığıyla adım adım vaka yönetimi ve teşhis süreçlerini simüle eder ve özellikle acil durum yönetimi, tanı koyma ve hasta değerlendirme gibi tıbbi becerilerin gelişimini destekler.
 
 ## Özellikler
 
