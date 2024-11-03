@@ -1,6 +1,6 @@
 # Medisim - Tıp Eğitiminde Simülasyon Yazılımı
 
-**Medisim**, sağlık personelinin klinik senaryoları deneyimlemesine ve pratik yapmasına olanak tanıyan bir tıbbi simülasyon yazılımıdır. Bu yazılım, sanal hastalar aracılığıyla adım adım vaka yönetimi ve teşhis süreçlerini simüle eder ve özellikle acil durum yönetimi, tanı koyma ve hasta değerlendirme gibi tıbbi becerilerin gelişimini destekler.
+**Medisim**, Tıp öğrencilerinin klinik senaryoları deneyimlemesine ve pratik yapmasına olanak tanıyan bir tıbbi simülasyon yazılımıdır. Bu yazılım, sanal hastalar aracılığıyla adım adım vaka yönetimi ve teşhis süreçlerini simüle eder ve özellikle acil durum yönetimi, tanı koyma ve hasta değerlendirme gibi tıbbi becerilerin gelişimini destekler.
 
 ## Özellikler
 
@@ -15,7 +15,7 @@ Bu projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları tak
 
 1. **Proje Dosyalarını İndirin**: 
     ```bash
-    git clone https://github.com/kullanici/medisim.git
+    git clone https://github.com/furkanaknc/medi-secene-ai.git
     cd medisim
     ```
 
@@ -38,7 +38,7 @@ Bu projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları tak
  ```
 
 5. **Medisim'e Erişim**:
- Tarayıcınızda `http://localhost:3000` adresine giderek simülasyonu başlatabilirsiniz.
+ Tarayıcınızda `http://localhost:3000/login` adresine giderek simülasyonu başlatabilirsiniz.
 
 ## Kullanım
 
@@ -53,13 +53,11 @@ Kullanıcı, ekranda görülen butonlar aracılığıyla tıbbi bir alan seçebi
 - **Prompt Alanı**: Kullanıcı, tıbbi sorularını bu alanda girebilir.
 - **Sohbet Geçmişi**: Kullanıcının soruları ve AI modelinin yanıtları bu bölümde listelenir.
 
-## Bağımlılıklar
+## Kullanılan Paketler
 
 - `express`: Sunucu oluşturma ve yönlendirme
 - `ejs`: Şablon motoru
+- `googleapis ve google-auth-library`: Google authentication bağlantıları için
 - `dotenv`: Ortam değişkenleri
-- `axios`: HTTP istekleri için
+- `axios`: HTTP ve cUrl bağlantısı sağlamak için
 - `nodemon`: Geliştirme sırasında otomatik yeniden başlatma
-
-## Lisans
-Medisim, ISC lisansı ile lisanslanmıştır.
