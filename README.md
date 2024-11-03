@@ -8,16 +8,36 @@
 - **Sohbet Tabanlı Arayüz**: Kullanıcı, tıp senaryolarına yönelik sorular sorabilir ve AI modelinden yanıtlar alarak vaka sürecini yönetebilir.
 - **Yeni Vaka Başlatma**: Farklı vakalara geçiş yaparak çeşitli senaryolar üzerinde çalışma imkanı sağlar.
 - **Tıbbi Konular**: Fizyoloji, biyokimya, farmakoloji, pediatri gibi çeşitli tıbbi alanlarda bilgiye erişim sunar.
-- 
 ## Nasıl Üretildi?
 
-Öncelikle Tıpta Uzmanlık Sınavı (TUS) ve Genel tıp eğitimindeki konularak baz alınarak çeşitli telif hakkı olmayan kaynaklarla dataset üretildi. Vaka-Teşhis simülasyonu şeklinde üretilen bu datasetle Gemini 1.0 Pro AI Studio üzerinden fine-tune edildi.
+Öncelikle Tıpta Uzmanlık Sınavı (TUS) ve Genel tıp eğitimindeki konularak baz alınarak çeşitli telif hakkı olmayan kaynaklarla dataset üretildi (dataseti github repomuza ekledik).
+Vaka-Teşhis simülasyonu şeklinde üretilen bu datasetle Gemini 1.0 Pro AI Studio üzerinden fine-tune edildi.
 
 <img width="1168" alt="Ekran Resmi 2024-11-03 14 37 50" src="https://github.com/user-attachments/assets/250553ca-354a-4a54-aa01-57dd9556cec2">
 
+<hr>
+
 Modelimizi başarılı bir şekilde fine-tune ettikten sonra çeşitli tıp dersleri ile vaka senaryoları oluşturup tıp öğrencileri ile simülasyonumuzu test ettik ve başarılı sonuçlar elde ettik.
 
+<hr>
 
+![WhatsApp Image 2024-11-03 at 15 06 08](https://github.com/user-attachments/assets/211cd90c-4dd3-47ca-a3a8-282a2791f498)
+
+<hr>
+
+Sonrasında Google'ın sağladığı <a href="https://ai.google.dev/gemini-api/docs/model-tuning/tutorial?lang=rest#try-model">dokümantasyonda</a> bulunan cURL'e node.js formatına uyarladık.
+Google fine-tune edilmiş modelleri kullanabilmek için Google authentication kullanmayı şart tuttuğu için google-authentication modülünü kullandık.
+ES modülü kolaylığından dolayı .mjs uzantılı javascript dosyalarını kullandık. Frontend tarafında ise embedded javascript (.ejs) kullandık. Modelimizin tam verimli çalışması için çeşitli ilk promptlar geliştirdik ve bunları frontend'de promptları butonlara gömdük.
+
+<hr>
+
+![WhatsApp Image 2024-11-03 at 15 33 06](https://github.com/user-attachments/assets/53b51485-6610-43ab-9bbf-be778aedf9b1)
+
+<hr>
+
+![WhatsApp Image 2024-11-03 at 15 44 44](https://github.com/user-attachments/assets/24ea3556-6395-4168-b8c8-29989f4eb637)
+
+<hr>
 
 ## Kurulum
 
