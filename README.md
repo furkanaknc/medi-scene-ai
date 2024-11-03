@@ -8,6 +8,16 @@
 - **Sohbet Tabanlı Arayüz**: Kullanıcı, tıp senaryolarına yönelik sorular sorabilir ve AI modelinden yanıtlar alarak vaka sürecini yönetebilir.
 - **Yeni Vaka Başlatma**: Farklı vakalara geçiş yaparak çeşitli senaryolar üzerinde çalışma imkanı sağlar.
 - **Tıbbi Konular**: Fizyoloji, biyokimya, farmakoloji, pediatri gibi çeşitli tıbbi alanlarda bilgiye erişim sunar.
+- 
+## Nasıl Üretildi?
+
+Öncelikle Tıpta Uzmanlık Sınavı (TUS) ve Genel tıp eğitimindeki konularak baz alınarak çeşitli telif hakkı olmayan kaynaklarla dataset üretildi. Vaka-Teşhis simülasyonu şeklinde üretilen bu datasetle Gemini 1.0 Pro AI Studio üzerinden fine-tune edildi.
+
+<img width="1168" alt="Ekran Resmi 2024-11-03 14 37 50" src="https://github.com/user-attachments/assets/250553ca-354a-4a54-aa01-57dd9556cec2">
+
+Modelimizi başarılı bir şekilde fine-tune ettikten sonra çeşitli tıp dersleri ile vaka senaryoları oluşturup tıp öğrencileri ile simülasyonumuzu test ettik ve başarılı sonuçlar elde ettik.
+
+
 
 ## Kurulum
 
